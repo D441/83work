@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div style="display: flex;">
+		<div style="height: 100px;width: 100px; background-color: red; margin-right: 50px;" class="dvn"></div>
+		<div style="height: 100px;width: 100px; background-color: red; margin-right: 50px;" class="dvn"></div>
+		<div style="height: 100px;width: 100px; background-color: red; margin-right: 50px;" class="dvn"></div>
+		<div style="height: 100px;width: 100px; background-color: red; margin-right: 50px;" class="dvn"></div>
+		<div style="height: 100px;width: 100px; background-color: red; margin-right: 50px;" class="dvn"></div>
+		<button class="green">сделать зелеными</button>
+		<button class="yellow">сделать желтыми</button>
+		<button class="black">сделать черными</button>
+	</div>
+	<script type="text/javascript">
+		let dvn = document.querySelectorAll(".dvn")
+			document.querySelector(".green").onclick = function(){
+				for(let index = 0; index<5; index = index + 1){//цикл
+					dvn[index].style.backgroundColor = "green"
+				}
+			}
+			document.querySelector(".yellow").onclick = function(){
+				for(let index = 0; index<5; index = index + 1){//цикл
+					dvn[index].style.backgroundColor = "yellow"
+				}
+			}
+			document.querySelector(".black").onclick = function(){
+				for(let index = 0; index<5; index = index + 1){//цикл
+					dvn[index].style.backgroundColor = "black"
+				}
+			}
+	</script>
+</body>
+</html>
